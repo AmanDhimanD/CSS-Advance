@@ -1,0 +1,20 @@
+div {
+
+    text-align: center;
+    font-size: xx-large;
+    color:rgb(183, 226, 43);
+    width: 120px;
+    height: 200px;
+    background: rgb(37, 104, 230);
+    transition: width 0.8s, height 1s, transform 1s;
+    
+  }
+  
+  div:hover {
+   
+    width: 300px;
+    height: 300px;
+    background-image: repeating-radial-gradient(rgb(255, 230, 0),rgb(5, 113, 255),rgb(60, 255, 0));
+    background-color: chartreuse;
+    transform: rotate(180deg);
+  }
