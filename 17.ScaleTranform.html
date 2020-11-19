@@ -1,0 +1,79 @@
+<!-- Function	Description
+matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values
+translate(x,y)	Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n)	Defines a 2D translation, moving the element along the X-axis
+translateY(n)	Defines a 2D translation, moving the element along the Y-axis
+scale(x,y)	Defines a 2D scale transformation, changing the elements width and height
+scaleX(n)	Defines a 2D scale transformation, changing the element's width
+scaleY(n)	Defines a 2D scale transformation, changing the element's height
+rotate(angle)	Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle)	Defines a 2D skew transformation along the X-axis
+skewY(angle)	Defines a 2D skew transformation along the Y-axis -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.div1 {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scaleY(3); /* IE 9 */
+  transform: scaleY(3); /* Standard syntax */
+}
+.div2 {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scale(0.5,0.5); /*scale Method*/
+  transform: scale(0.5,0.5); 
+}
+.div3 {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scaleX(2); /* IE 9 */
+  transform: scaleX(2); /* Standard syntax */
+}
+/* this is  */
+.div4{
+    -ms-transform: skewX(20deg); /* IE 9 */
+  transform: skewX(20deg); /* Standard syntax */
+}
+/* this is SkewY  */
+.div5{
+  -ms-transform: skewY(20deg); /* IE 9 */
+  transform: skewY(-20deg); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+
+<h1>The scaleY() Method</h1>
+<p>The scaleY() method increases or decreases the height of an element.</p>
+
+<div class="div1">
+This div element is three times of its original height.
+</div>
+<div class="div2">
+This div element is three times of its original height.
+</div>
+<div class="div3">
+This div element is three times of its original height.
+</div>
+<div class="div4">
+This div element is three times of its original height.
+</div>
+<div class="div5">
+This div element is three times of its original height.
+</div>
+
+</body>
+</html>
