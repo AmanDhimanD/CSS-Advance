@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 100%;
+            border: 2px solid rgb(0, 0, 0);
+            display: flex;
+            /* flex-direction: row;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-wrap: wrap; */
+        }
+        .flex{
+            width: 130px;
+            height: 130px;
+            background-color: rgb(241, 168, 71);
+            border: 2px solid rgb(147, 243, 130);
+            margin: 10px;
+            padding: 2px;
+            /* by deault is row */
+        /* flex-direction:row ; */
+        }
+        #flex1{
+            order: 2;/*To arrange the box accor. the order no.2*/
+        }
+        #flex2{
+            flex-shrink: 3;/*For shrink The BOX size*/
+        }
+        #flex3{
+            
+            flex-grow: 1; /*For Grow The BOX size*/
+        }
+        #flex4{
+            flex-basis: 320px;
+        }
+        #flex5{
+            align-self: flex-end; /* this is useful for making the chat box end of the page*/
+            /* align-self: flex-start;
+            align-self: center; */
+        }
+    </style>
+</head>
+<body>
+
+<h1>This is flex Box </h1>
+        <div class="container">
+            <div class="flex" id="flex1">first</div>
+            <div class="flex" id="flex2">Second</div>
+            <div class="flex" id="flex3">Third</div>
+            <div class="flex" id="flex4">Forth</div>
+            <div class="flex" id="flex5">Fifth</div>
+
+        </div>
+</body>
+</html>
