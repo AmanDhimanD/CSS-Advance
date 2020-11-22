@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>   
+      /* When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times. */
+      div{
+          width: 200px;
+          height: 200px;
+          background-color: red;
+          animation-name: a;
+          animation-duration: 2s;
+      }
+
+        /* from & to is use for only 1 time animation  */
+        /* instead  it we use % type specifiers */
+      @keyframes a{
+          from{background-color: rgb(0, 255, 110);}
+        to{background-color: rgb(250, 0, 0);}
+      }
+    </style>
+</head>
+<body>
+        <h1>This is Animation Type </h1>
+        
+        <div>BOX</div>
+    
+
+</body>
+</html>
