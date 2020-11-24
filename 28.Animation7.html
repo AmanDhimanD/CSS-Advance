@@ -1,0 +1,48 @@
+<!-- The animation-timing-function property specifies the speed curve of the animation.
+
+The animation-timing-function property can have the following values:
+
+ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - Specifies an animation with the same speed from start to end
+ease-in - Specifies an animation with a slow start
+ease-out - Specifies an animation with a slow end
+ease-in-out - Specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function -->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-direction:alternate;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> The animation-timing-funtion property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+<div id="div1">A</div>
+<div id="div2">M</div>
+<div id="div3">A</div>
+<div id="div4">N</div>
+<div id="div5">D</div>
+
+</body>
+</html>
