@@ -1,0 +1,105 @@
+.tooltip-1 {
+    margin-left: 900px;
+    position: relative;
+    display: inline-block;  
+    border-bottom: 1px dotted black;
+
+}
+.tooltip-1 .text1{
+
+    visibility: hidden;
+    width: 130px;
+    background-color: rgba(255, 0, 0, 0.801);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+.tooltip-1:hover .text1{
+    visibility: visible;
+}
+.tooltip-2 {
+    margin-left: 450px;
+    position: relative;
+    display: inline-block;  
+    border-bottom: 1px dotted black;
+
+}
+.tooltip-2 .text2{
+
+    visibility: hidden;
+    width: 130px;
+    background-color: rgba(208, 255, 0, 0.801);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+.tooltip-2:hover .text2{
+    visibility: visible;
+}
+/* 3 */
+.tooltip-3 {
+    margin-left: 0px;
+    position: relative;
+    display: inline-block;  
+    border-bottom: 1px dotted black;
+
+}
+.tooltip-3 .text3{
+
+    visibility: hidden;
+    width: 130px;
+    background-color: rgba(217, 255, 0, 0.801);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+     left: 50%;
+margin-left: -60px;
+}
+.tooltip-3:hover .text3{
+    visibility: visible;
+}
+/* 4 */
+.tooltip-4 {
+    margin-left: 900px;
+    position: relative;
+    display: inline-block;  
+    border-bottom: 1px dotted black;
+
+}
+.tooltip-4 .text4{
+
+    visibility: hidden;
+    width: 130px;
+    background-color: rgba(0, 247, 255, 0.801);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+     margin-left: -60px;
+}
+
+.tooltip-4:hover .text4{
+    visibility: visible;
+}
