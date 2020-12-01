@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINATION-</title>
+    <style>
+        .center{
+            text-align: center;
+            
+        }
+        .page{
+            padding: 100px;
+            display: inline-block;
+        }
+        .page a{
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: 900;
+            border-radius: 90px ;
+        }
+        .page a.active{
+            background-color: aqua;
+            color: black;
+        }
+        .page a:hover{
+            background-color: aqua;
+            color: black;
+            border-radius: 30px ;
+            transition: background-color 0.1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+
+        <h2>This is PAGINATION-CSS</h2>
+        
+        <div class="page">
+            <!-- THIS IS USE FOR PERVISIOUS  PAGE -->
+            <a href="#">&laquo;</a> 
+            
+            <a  class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <!-- THIS IS USE FOR NEXT PAGE -->
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+</body>
+</html>
