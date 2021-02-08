@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Look Character || Face.com</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section>
+            <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY ?</h1>
+            <div class="container">
+                <label>Enter Your Name</label> <br>
+                <input type="text" name="" id="name" placeholder="Enter your name">
+            </div>
+            <br>
+            <div class="image">
+                <img src="img.jpg" width="200" height="200" id="change">
+            </div>
+            <button>Click Me</button>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('button').click(function () {
+                    const name = $('#name').val();
+                    alert(name);
+                    $('#change').attr('src', `https://joeschmoe.io/api/v1/${'name'}`);
+                    const b = $('#change');
+                    console.log(b);
+                });
+            });
+        </script>
+    </body>
+
+</html>
