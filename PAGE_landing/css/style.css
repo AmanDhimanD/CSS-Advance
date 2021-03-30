@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+.center {
+    text-align: center;
+    margin: 50px;
+    color: rgb(18, 187, 150);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    font-size: large;
+}
+.center:hover
+{
+    color:deeppink;
+    font-size: xx-large;
+    text-shadow: 5px 6px 3px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1334px) {
+    body {
+        background-color: rgb(93, 233, 238);
+        color: white;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: olive;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        background-color: rgb(0, 128, 32);
+        color: white;
+    }
+}
